@@ -25,7 +25,9 @@ class SortedList {
 		return Math.min(...this.items);
 	}
 
-	sum() {}
+	sum() {
+		return this.items.reduce((sum, curr) => sum + curr, 0);
+	}
 
 	avg() {}
 }
